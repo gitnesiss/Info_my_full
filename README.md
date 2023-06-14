@@ -22,11 +22,14 @@
 Теперь можно начать программировать на языке Kotlin.
 
 
+```
+Пока оставить эти ссылки, позже можно будет удалить, если не понадобятся.
+- https://github.com/skeeto/w64devkit/tree/master
+- https://www.youtube.com/watch?v=taCJhnBXG_w
+- google: --> "mingw minimalist gnu for windows"
+```
 
 
-https://github.com/skeeto/w64devkit/tree/master
-https://www.youtube.com/watch?v=taCJhnBXG_w
-google: --> "mingw minimalist gnu for windows"
 
 ## Первая программа
 
@@ -40,7 +43,27 @@ fun main(){
 }
 ```
 
-Открываем командную строку 
+Открываем командную строку и вписываем следующую команду:
+
+```
+kotlinc app.kt -include-runtime -d app.jar
+```
+
+С помощью этой команды компилируем рабочий файл:
+
+- `kotlinc` - запуск компилятора языка Kotlin;
+- `app.kt` - имя исходного файла с кодом;
+- `-include-runtime` - параметр указывает, что создаваемый файл будет включать среду Kotlin;
+- `-d` - параметр указывает, как будет называться создаваесый файл приложения;
+- `app.jar` имя выходного файла.
+
+После того, как файл app.jar скомпилировался, запускаем его с помощью следующей команды:
+
+```
+java -jar app.jar
+```
+
+
 
 ## Объявление переменных
 
