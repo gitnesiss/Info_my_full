@@ -266,7 +266,7 @@ $ \copyright $ $ \S $ $ \checkmark $ $ \circledR $
 #### Греческие буквы
 
 $ \alpha $ $ \beta $ $ \gamma $ $ \delta $ $ \varepsilon $ $ \eta $ $ \theta $ $ \vartheta $ $ \lambda $ $ \mu $ $ \nu $ $ \mu $ $ \xi $ $ \rho $ $ \sigma $ $ \tau $ $ \upsilon $ $ \varphi $ $ \phi $ $ \chi $ $ \psi $ $ \omega $
-$ \Delta $ $ \Theta $ $ \Omega $
+$ \Alpha $ $ \Beta $ $ \Gamma $ $ \Delta $ $ \Eta $ $ \Theta $ $ \Lambda $ $ \Nu $ $ \Mu $ $ \Xi $ $ \Rho $ $ \Sigma $ $ \Tau $ $ \Upsilon $ $ \Phi $ $ \Chi $ $ \Psi $ $ \Omega $
 
 
 ### Задание цвета символам

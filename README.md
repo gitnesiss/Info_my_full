@@ -12,7 +12,9 @@
 
 - [Что изучать и как изучать Kotlin/Android](learning_kotlin.md)
 
-- [Android и ESP32](https://www.youtube.com/watch?v=QKGdPJR_tbU&list=PLmjT2NFTgg1c-CQiAdezZpi9RaFmN1n7I).
+- [Android и ESP32 video](https://www.youtube.com/watch?v=QKGdPJR_tbU&list=PLmjT2NFTgg1c-CQiAdezZpi9RaFmN1n7I).
+
+- [Arduino и ESP32](electronika_arduino_and_esp32.md)
 
 
 # Изучаем Kotlin
