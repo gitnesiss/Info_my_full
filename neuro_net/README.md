@@ -6,6 +6,8 @@
 
 - [OpenCV](opencv/neuro_net_opencv.md)
 
+- [Keras](neuro_net_keras.md)
+
 # Почитать
 
 [В начало документа Всё про Нейронные сети](#всё-про-нейронные-сети)

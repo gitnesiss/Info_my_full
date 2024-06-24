@@ -17,9 +17,7 @@
 
 2.4 [RaspberryPy](microelectronics/raspberrypi/electronika_raspberrypi.md)
 
-3 [Arduino и ESP32](electronika_arduino_and_esp32.md)
-
-4 [Оформление для Markdown](markdown_styling.md)
+4 [Информация по Markdown](markdown/README.md)
 
 
 

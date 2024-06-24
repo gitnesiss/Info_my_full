@@ -1,7 +1,8 @@
-[Основная страница](README.md)
+[На главную страницу](../README.md)
 
-# Работа в стиле Markdown
+[В начало раздела Всё про Markdown](README.md)
 
+# Стилизация Markdown
 
 # Оформление документа
 
@@ -115,6 +116,9 @@ SSR(p) = |f - g<sub>p</sub>|<sup>2</sup> - SSR(p) = |f - g\<sub>p\</sub>|\<sup>2
 
 
 ## Оформление математических выражений
+
+Чтобы верно отображались математические формулы в Markdown документах в Visual Studio Code нужно установить расширение
+`Markdown Preview Enhanced`.
 
 ### Ссылки
 
@@ -288,3 +292,11 @@ $ k = {\color{red}x} \mathbin{\color{blue}-} 2 $
 - [Markdown Badges - Библиотека бейджей с готовыми фрагментами md-кодов для вставки](https://github.com/Ileriayo/markdown-badges "GitHub")
 
 - [Shields.io - Инструмент для генерации кастомных бейджей](https://shields.io/) их [GitHub](https://github.com/badges/shields)
+
+---
+
+[В начало документа Стилизация Markdown](#стилизация-markdown)
+
+[В начало раздела Всё про Markdown](README.md)
+
+[На главную страницу](../README.md)
