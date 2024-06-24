@@ -105,4 +105,10 @@ $ y(x) \in (0, 1) $
 
 > pip install tensorflow_datasets
 
+# Почитать:
 
+1.
+
+2. 
+
+3. [Гайд по работе сверточных нейронных сетей от Skill Factory](https://habr.com/ru/companies/skillfactory/articles/823516/)
