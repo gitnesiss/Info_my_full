@@ -110,9 +110,38 @@ Hello Python world!
 
 ### Переменные в Python
 
+```
+name = "Vasiliy Petrov"
+print(name)
+```
 
+### Форматирование текста
 
+```
+name = "Vasiliy Petrov"
 
+# Первые буквы каждого слова будут с большой буквы
+print(name.title())
+
+# Все буквы слова будут выведены с большой буквы
+print(name.upper())
+
+# Все буквы слова будут выведены с маленькой буквы
+print(name.lower())
+```
+
+Метод lower() особенно полезен для того чтобы хранить данные 
+
+### Использование переменных в строках
+
+```
+firstName = "vasiliy"
+lastName = "petrov"
+fullName = f"{firstName} {lastName}"
+print(fullName)
+```
+
+`f"{firstName} {lastName}"` - называется *f-строка*
 
 ---
 
