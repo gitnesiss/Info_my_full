@@ -1,6 +1,8 @@
-Информация делалась по этому [видео](https://www.youtube.com/watch?v=7jbAdB5lt9I).
+[На главную страницу](../README.md)
 
-Стэндфордский курс [Свёрточные нейронные сети для визуального распознавания](https://www.reg.ru/blog/stenfordskij-kurs-lekciya-1-vvedenie/).
+[В начало раздела нейронных сетей](README.md)
+
+Информация делалась по этому [видео](https://www.youtube.com/watch?v=7jbAdB5lt9I).
 
 # 0. Установка numpy, tensorflow, keras.
 
@@ -107,8 +109,13 @@ $ y(x) \in (0, 1) $
 
 # Почитать:
 
-1.
+1. [learnopencv.com](https://learnopencv.com/) - Обучающие материалы.
 
-2. 
+2. Стэндфордский курс [Свёрточные нейронные сети для визуального распознавания](https://www.reg.ru/blog/stenfordskij-kurs-lekciya-1-vvedenie/).
 
 3. [Гайд по работе сверточных нейронных сетей от Skill Factory](https://habr.com/ru/companies/skillfactory/articles/823516/)
+
+
+[В начало документа Всё про Нейронные сети](README.md)
+
+[На главную страницу](../README.md)

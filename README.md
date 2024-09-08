@@ -5,7 +5,7 @@
 
 ## Содержание
 
-1 [Информация по Android](android/README.md)
+1 [Языки программирования и языки сценариев командной оболочки](programming_languages/README.md)
 
 2 [Микроэлектроника и одноплатные компьютеры](microelectronics/README.md)
 
@@ -17,7 +17,11 @@
 
 2.4 [RaspberryPy](microelectronics/raspberrypi/electronika_raspberrypi.md)
 
-4 [Информация по Markdown](markdown/README.md)
+3 [Нейронные сети](neuro_net/README.md)
+
+4 [Информация по Android](android/README.md)
+
+5 [Информация по Markdown](markdown/README.md)
 
 
 

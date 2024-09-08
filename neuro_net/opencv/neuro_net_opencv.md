@@ -2,11 +2,7 @@
 
 [В начало раздела нейронных сетей](../README.md)
 
-
-Информация делалась по этому  [видео](https://www.youtube.com/watch?v=oc64kCbPi6o).
-
-learnopencv.com
-
+Информация делалась по этому [видео](https://www.youtube.com/watch?v=oc64kCbPi6o).
 
 # Установка Python
 
@@ -1065,8 +1061,10 @@ cv2.destroyAllWindows()
 
 # Почитать
 
+1. [learnopencv.com](https://learnopencv.com/) - Обучающие материалы.
 
 
-[В начало документа Всё про Нейронные сети](#всё-про-нейронные-сети)
+
+[В начало документа Всё про Нейронные сети](../README.md)
 
 [На главную страницу](../../README.md)
