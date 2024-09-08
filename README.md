@@ -9,13 +9,15 @@
 
 2 [Микроэлектроника и одноплатные компьютеры](microelectronics/README.md)
 
-2.1 [Ардуино](microelectronics/arduino/electronika_arduino.md)
+2.1 [Компоненты микроэлектроники](microelectronics/micro_components/micro_components.md)
 
-2.2 [ESP-32](microelectronics/ESP32/electronika_esp32.md)
+2.2 [Ардуино](microelectronics/arduino/electronika_arduino.md)
 
-2.3 [OrangePI](microelectronics/orangepi/electronika_orangepi.md)
+2.3 [ESP-32](microelectronics/ESP32/electronika_esp32.md)
 
-2.4 [RaspberryPy](microelectronics/raspberrypi/electronika_raspberrypi.md)
+2.4 [OrangePI](microelectronics/orangepi/electronika_orangepi.md)
+
+2.5 [RaspberryPy](microelectronics/raspberrypi/electronika_raspberrypi.md)
 
 3 [Нейронные сети](neuro_net/README.md)
 
