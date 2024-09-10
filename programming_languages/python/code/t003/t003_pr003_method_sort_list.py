@@ -13,7 +13,6 @@ cars = ['bmw', 'audi', 'toyota', 'subaru']
 print(sorted(cars))
 print(f"{cars}\n")
 
-
 # Сортировка списка временная - упорядочивание в обратном алфавитном порядке
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 print(sorted(cars, reverse=True))
