@@ -373,6 +373,27 @@ for dimention in dimentions:
     print(dimention)
 ```
 
+# 5 Условия if
+
+Проверка условия в Python осуществляется с учётом регистра. **Audi != audi**.
+
+```
+# Если машина bmw, то вывести её название в верхнем 
+# регистре, остальное с заглавной буквы.
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+
+# Проверка условия равно
+car_m = 'dodge'
+print(car_m == 'dodgeg')
+```
+
+Проверка нескольких условий может быть осуществлена с помощью логических выражений `and` или `or`. Это аналоги Сишных && или ||. 
+
 
 
 ---
