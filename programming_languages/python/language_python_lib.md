@@ -8,18 +8,64 @@
 
 # Содержание
 
-1 [Установка PyInstaller для создания исполняемого файла из скрипта *.py](#1-установка-pyinstaller-для-создания-исполняемого-файла-из-скрипта-py)
-2 [Установка библиотеки для работы с Serial port'ом на Python](#2-установка-библиотеки-для-работы-с-serial-portом-на-python)
-3 [Установка библиотеки pymavlink для работы с протоколом MAVLink на Python](#3-установка-библиотеки-pymavlink-для-работы-с-протоколом-mavlink-на-python)
-4 [Установка PyQt6](#4-установка-pyqt6)
-4.1 [Установка библиотеки pyqt-tools для установки дополнительных инструметов и плагинов для QT на Python](#41-установка-библиотеки-pyqt-tools-для-установки-дополнительных-инструметов-и-плагинов-для-qt-на-python)
-5 [Сборка QtCreator из исходников на Ubuntu](#5-сборка-qtcreator-из-исходников-на-ubuntu)
-6 [Сборка QtCreator из исходников на Windows](#6-сборка-qtcreator-из-исходников-на-windows)
-7 [Установка QT в Windows с помощью MSYS2](#7-установка-qt-в-windows-с-помощью-msys2)
+1 [Установка Python в Windows](#1-установка-python-в-windows)
+2 [Установка PyInstaller для создания исполняемого файла из скрипта *.py](#2-установка-pyinstaller-для-создания-исполняемого-файла-из-скрипта-py)
+3 [Установка библиотеки для работы с Serial port'ом на Python](#3-установка-библиотеки-для-работы-с-serial-portом-на-python)
+4 [Установка библиотеки pymavlink для работы с протоколом MAVLink на Python](#4-установка-библиотеки-pymavlink-для-работы-с-протоколом-mavlink-на-python)
+5 [Установка PyQt6](#5-установка-pyqt6)
+5.1 [Установка библиотеки pyqt-tools для установки дополнительных инструметов и плагинов для QT на Python](#51-установка-библиотеки-pyqt-tools-для-установки-дополнительных-инструметов-и-плагинов-для-qt-на-python)
+6 [Сборка QtCreator из исходников на Ubuntu](#6-сборка-qtcreator-из-исходников-на-ubuntu)
+7 [Сборка QtCreator из исходников на Windows](#7-сборка-qtcreator-из-исходников-на-windows)
+8 [Установка QT в Windows с помощью MSYS2](#8-установка-qt-в-windows-с-помощью-msys2)
 
 
 
-## 1 Установка PyInstaller для создания исполняемого файла из скрипта *.py
+## 1 Установка Python в Windows
+
+### 1.1 Проверяем наличие Python и устанавливаем его
+
+```
+# Для Windows
+python --version
+
+# Для UNIX
+python3 --version
+```
+
+Если в системе установлен Python, то в терминал будет выведена следующая информация (номер версии может отличаться):
+
+```
+Python 3.11.0
+```
+
+Если ответ похож на `Python is not defined`, то для ОС Windows скачиваем [установщик](https://www.python.org/downloads/).
+
+```
+# Устанавливаем Python на UNIX
+sudo apt-get update -y
+sudo apt-get install python3
+```
+
+### 1.2 Устаналвиваем PIP (предпочитаемый установщик программ) для Python и обновляем его
+
+При версиях Python выше 3.4 `pip` должен устанавливаться с установкой самого Python. Если этого не произошло, то можно его установить с помощью
+
+```
+# Для UNIX и RaspberryPi
+sudo apt-get install python3-pip
+```
+
+Обновить pip можно с помощью команд
+
+```
+# Для Windows
+python -m pip install -U pip
+
+# Для UNIX и RaspberryPi
+pip install -U pip
+```
+
+## 2 Установка PyInstaller для создания исполняемого файла из скрипта *.py
 
 Почитать подробнее можно [тут](https://habr.com/ru/companies/slurm/articles/746622/).
 
@@ -40,7 +86,7 @@ pyinstaller --onefile hello.py
 pyinstaller --noconsole --onefile hello.py
 ```
 
-## 2 Установка библиотеки для работы с Serial port'ом на Python
+## 3 Установка библиотеки для работы с Serial port'ом на Python
 
 Про установку библиотеки можно прочитать [тут](https://musbench.com/all/com-port-python-arduino/).
 
@@ -54,14 +100,14 @@ pip3 install pyserial
 
 При установке в UNIX системах, нужно добавить каталог содержащий эту библиотеку в переменную $PATH. Почитать [тут](https://ip-calculator.ru/blog/ask/kak-dobavit-katalog-v-path-v-linux/).
 
-## 3 Установка библиотеки pymavlink для работы с протоколом MAVLink на Python
+## 4 Установка библиотеки pymavlink для работы с протоколом MAVLink на Python
 
 ```
 # Для Windows
 pip install pymavlink
 ```
 
-## 4 Установка PyQt6
+## 5 Установка PyQt6
 
 Для установки PyQt6 следует запустить следующую команду
 
@@ -90,7 +136,7 @@ python3  # Запускаем интерпретатор Python
 
 Если никаких ошибок не возникло, то установка прошла удачно. Если возникла ошибка, то нужно причины ошибки.
 
-### 4.1 Установка библиотеки pyqt-tools для установки дополнительных инструметов и плагинов для QT на Python
+### 5.1 Установка библиотеки pyqt-tools для установки дополнительных инструметов и плагинов для QT на Python
 
 ```
 pip install pyqt6-tools
@@ -98,7 +144,7 @@ pip install pyqt6-tools
 pyqt6-tools designer
 ```
 
-# 5 Сборка QtCreator из исходников на Ubuntu
+# 6 Сборка QtCreator из исходников на Ubuntu
 
 ```
 sudo apt-get update -y
@@ -152,21 +198,21 @@ cmake --build . --parallel 4
 cmake --install.
 ```
 
-# 6 Сборка QtCreator из исходников на Windows
+# 7 Сборка QtCreator из исходников на Windows
 
-## 6.1 Установка CMake
+## 7.1 Установка CMake
 
 ```
 pacman -S cmake
 ```
 
-## 6.2 Установка python3
+## 7.2 Установка python3
 
 ```
 pacman -S python3
 ```
 
-## 6.3 Сборка QtCreator из исходников
+## 7.3 Сборка QtCreator из исходников
 
 ```
 $ sudo apt install cmake
@@ -182,7 +228,7 @@ $ make
 $ sudo make install INSTALL_ROOT=[директория, в которую хотите установить. Например, /opt/QtCreator]
 ```
 
-# 7 Установка QT в Windows с помощью MSYS2
+# 8 Установка QT в Windows с помощью MSYS2
 
 Для установки QT Creator на Windows нужно выполнить следующие шаги:
 
