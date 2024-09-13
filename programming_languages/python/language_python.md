@@ -998,6 +998,91 @@ def greet_user():
 greet_user()
 ```
 
+У функции есть:
+**параметр** - условные данные, необходимые функции для выполнения её работы.
+**аргумент** - конкретная информация, переданная при вызове функции.
+
+```
+# Создание простой функции и её вывод
+def greet_user():
+    """Выводит простое приветствие."""  # Строка документации
+    print("Привет!")
+
+greet_user()
+
+print()
+
+# Создание функции с передачей ей параметра
+def greet_user_1(username):  # используется параметр
+    """Выводит простое приветствие."""  # Строка документации
+    print(f"Привет, {username.title()}!")
+
+greet_user_1('василий')  # передаётся аргумент
+
+print()
+
+# Позиционные аргументы
+def describe_pet(animal_tipe, pet_name):
+    print(f"\nУ меня есть {animal_tipe}.")
+    print(f"Моего {animal_tipe}а зовут {pet_name.title()}.")
+
+describe_pet('хомяк', 'гарри')
+describe_pet('кот', 'барсик')
+
+print()
+
+# Именнованные аргументы - можно не заботиться о позиции аргументов
+def describe_pet(animal_tipe, pet_name):
+    print(f"\nУ меня есть {animal_tipe}.")
+    print(f"Моего {animal_tipe}а зовут {pet_name.title()}.")
+
+describe_pet(animal_tipe = 'хомяк', pet_name = 'гарри')
+describe_pet(pet_name = 'барсик', animal_tipe = 'кот')
+
+print()
+
+# Параметры по умолчанию, помещаются после параметров без значений
+def describe_pet(pet_name, animal_tipe = 'собака'):
+    print(f"\nУ меня есть {animal_tipe}.")
+    print(f"Моего {animal_tipe}а зовут {pet_name.title()}.")
+
+describe_pet('Шарик')  # не указан вид животного, но он определяется по умолчанию
+describe_pet(animal_tipe = 'хомяк', pet_name = 'гарри')
+describe_pet(pet_name = 'барсик', animal_tipe = 'кот')
+```
+
+#### Возвращаемое значение
+
+```
+# Возвращение простого значения из функции
+def get_formatted_name(first_name, last_name):
+    """Возвращает аккуратно отформатированное полное имя."""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+musician = get_formatted_name('джимми', 'хендрикс')
+print(musician)
+```
+
+#### Необязательные аргументы
+
+Необязательные аргументы нужны когда один или несколько из аргументов могут отсутствовать. Соотвтетственно этим параметром нужно назначить в качестве параметра пустую строку со значение по умолчанию и переместить её в конец списка параметров.
+
+```
+# Необязательные аргументы
+def get_formatted_name(first_name, last_name, middle_name = ''):
+    """Возвращает аккуратно отформатированное полное имя."""
+    if middle_name:
+        full_name = f"{first_name} {middle_name} {last_name}"
+    else:
+        full_name = f"{first_name} {last_name}"
+    return full_name.title()
+musician = get_formatted_name('джимми', 'хендрикс')
+print(musician)
+musician = get_formatted_name('джон', 'коккер', 'ли')
+print(musician)
+```
+
+
 
 
 ---
