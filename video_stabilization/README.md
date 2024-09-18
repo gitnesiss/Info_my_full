@@ -14,12 +14,16 @@
 
 [Официальные руководства по OpenCV, подготовленные разработчиками OpenCV.](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
 
-
 ```
 # if ffmpeg executables are located at "/foo/foo1/FFmpeg"
 WriteGear(output = 'output.mp4', custom_ffmpeg="/foo/foo1/FFmpeg")
 ```
 
+[C++ стабилизатор видео](https://nghiaho.com/?p=2093)
+
+```
+./videostab input.avi
+```
 
 ---
 

@@ -1,20 +1,20 @@
 import cv2
 import numpy as np
-# from cffi import FFI
+from cffi import FFI
 
 
 
-# def box():
-#     ffi=FFI() 
-#     ffi.cdef("""
-#             int MessageBoxA(HWND hWnd, LPCSTR lpText, LPCSTR lpCation, UINT uType);
-#             """)
-#     _user32 = ffi.dlopen("USER32.DLL")
-#     lpText = bytes("Hello from cffi", "utf-8")
-#     lpCaption = bytes("Test cffi", "utf-8")
-#     MB_OK = 1
-#     if _user32.MessageBoxA(ffi.NULL, lpText, lpCaption, MB_OK):
-#         print("MessageBox showed!")
+def box():
+    ffi=FFI() 
+    ffi.cdef("""
+            int MessageBoxA(HWND hWnd, LPCSTR lpText, LPCSTR lpCation, UINT uType);
+            """)
+    _user32 = ffi.dlopen("USER32.DLL")
+    lpText = bytes("Hello from cffi", "utf-8")
+    lpCaption = bytes("Test cffi", "utf-8")
+    MB_OK = 1
+    if _user32.MessageBoxA(ffi.NULL, lpText, lpCaption, MB_OK):
+        print("MessageBox showed!")
 
 
 
