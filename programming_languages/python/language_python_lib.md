@@ -69,6 +69,8 @@ sudo apt-get install python3-pip
 ```
 # Для Windows
 python -m pip install -U pip
+# или
+python -m pip install pip --upgrade
 
 # Для UNIX и RaspberryPi
 pip install -U pip

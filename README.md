@@ -19,11 +19,13 @@
 
 2.5 [RaspberryPy](microelectronics/raspberrypi/electronika_raspberrypi.md)
 
-3 [Нейронные сети](neuro_net/README.md)
+3 [Стабилизация видеопотока](video_stabilization/README.md)
 
-4 [Информация по Android](android/README.md)
+4 [Нейронные сети](neuro_net/README.md)
 
-5 [Информация по Markdown](markdown/README.md)
+5 [Информация по Android](android/README.md)
+
+6 [Информация по Markdown](markdown/README.md)
 
 
 
