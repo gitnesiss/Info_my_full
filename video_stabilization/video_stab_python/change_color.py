@@ -33,6 +33,10 @@ while True:
     if key == ord("e"):
         stream.color_space = cv2.COLOR_BGR2LAB  # Now colorspace is CieLAB
 
+    if key == ord("r"):
+        # directly change colorspace at any instant
+        stream.color_space = cv2.COLOR_BGR2HSV  # Now colorspace is HSV
+
     # check for 's' key is pressed
     if key == ord("s"):
         stream.color_space = None  # Now colorspace is default(ie BGR)
