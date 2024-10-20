@@ -23,7 +23,7 @@
 
 4. [Подробное объяснение процедуры анализа сигнала SBUS STM32](https://programmersought.com/article/68737014549/)
 
-4. [Эксперимент Raspberry Foundation 39: Анализ сигналов PWM, SBUS радиоприемника](https://programmersought.com/article/65878758516/)
+5. [Эксперимент Raspberry Foundation 39: Анализ сигналов PWM, SBUS радиоприемника](https://programmersought.com/article/65878758516/)
 
 ---
 
