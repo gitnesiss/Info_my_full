@@ -19,6 +19,8 @@
 
 2.5 [RaspberryPy](microelectronics/raspberrypi/electronika_raspberrypi.md)
 
+2.6 [Радиосвязь](microelectronics/radio_electronics/radiosvyaz.md)
+
 3 [Стабилизация видеопотока](video_stabilization/README.md)
 
 4 [Нейронные сети](neuro_net/README.md)
