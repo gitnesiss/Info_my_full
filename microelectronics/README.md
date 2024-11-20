@@ -6,7 +6,7 @@
 
 ## Содержание
 
-- [Компоненты микроэлектроники](micro_components/micro_components.md)
+- [Общая информация и компоненты микроэлектроники](micro_components/micro_components.md)
 
 - [Ардуино](arduino/electronika_arduino.md)
 

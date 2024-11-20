@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=256&section=header&text=Моя%20база%20ЗНАНИЙ&fontSize=75&animation=fadeIn&fontAlignY=38&desc=Welcome%20to%20my%20GitHub%20profile!&descAlignY=51&descAlign=62)
 
 
-Это моя база знаний, в которой я стараюсь собрать информацию для быстрого востановления знаний по различным темам.
+Это база знаний, в которой я стараюсь собрать информацию для быстрого востановления знаний по различным темам.
 
 ## Содержание
 
@@ -21,7 +21,7 @@
 
 2.6 [Радиосвязь](microelectronics/radio_electronics/radiosvyaz.md)
 
-3 [Стабилизация видеопотока](video_stabilization/README.md)
+3 [Программная стабилизация видеопотока](video_stabilization/README.md)
 
 4 [Нейронные сети](neuro_net/README.md)
 
