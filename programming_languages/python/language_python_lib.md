@@ -98,18 +98,16 @@ pyinstaller --noconsole --onefile hello.py
 ```
 
 ## 3 Установка библиотеки OpenCV
+```
+# Установка OpenCV
+pip install opencv-python
 
-Установка OpenCV
+# Если потребуется обновить, то 
+python.exe -m pip install --upgrade pip
 
-> pip install opencv-python
-
-Если потребуется обновить, то 
-
-> python.exe -m pip install --upgrade pip
-
-Дополнения для библиотеки OpenCV дополниетльные команды, которые позволят работать в полную силу.
-
-> pip install opencv-contrib-python
+# Дополнения для библиотеки OpenCV дополниетльные команды, которые позволят работать в полную силу.
+pip install opencv-contrib-python
+```
 
 ## 4 Установка библиотеки для работы с Serial port'ом на Python
 
@@ -121,6 +119,7 @@ pip install pyserial
 
 # Для UNIX и RaspberryPi
 pip3 install pyserial
+export PATH=$PATH:/home/$USER/.local/bin
 ```
 
 При установке в UNIX системах, нужно добавить каталог содержащий эту библиотеку в переменную $PATH. Почитать [тут](https://ip-calculator.ru/blog/ask/kak-dobavit-katalog-v-path-v-linux/).
@@ -130,6 +129,11 @@ pip3 install pyserial
 ```
 # Для Windows
 pip install pymavlink
+
+# Для UNIX
+sudo apt install python3 python3-pip
+git clone https://github.com/mavlink/mavlink.git --recursive
+python3 -m pip install -r mavlink/pymavlink/requirements.txt
 ```
 
 ## 6 Установка PyQt6

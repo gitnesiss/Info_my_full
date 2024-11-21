@@ -3,10 +3,10 @@ from vidgear.gears.stabilizer import Stabilizer
 from vidgear.gears import CamGear
 import cv2
 
-# To open live video stream on webcam at first index(i.e. 0) device
+# Открыть прямую трансляцию видео на веб-камере на первом индексном устройстве (т.е. 0)
 stream = CamGear(source=0).start()
 
-# initiate stabilizer object with default parameters
+# инициировать объект стабилизатора с параметрами по умолчанию
 stab = Stabilizer()
 
 # loop over
@@ -28,6 +28,7 @@ while True:
 
     # {do something with the stabilized frame here}
 
+    # Куда вставлять, что написать, начало координат расположения текста, шрифт, масштаб шрифта, цвет, толщина)
     cv2.putText(frame, "Stabilizing: on", (5, 25), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 2) 
     
     # Show output window

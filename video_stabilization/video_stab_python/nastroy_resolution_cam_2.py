@@ -2,7 +2,7 @@
 from vidgear.gears import VideoGear
 import cv2
 
-
+#options = {"STREAM_RESOLUTION": "720p"}
 # define suitable tweak parameters for your stream.
 options = {
     "CAP_PROP_FRAME_WIDTH": 320, # resolution 320x240

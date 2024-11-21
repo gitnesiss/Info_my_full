@@ -1,5 +1,6 @@
 # import required libraries
 from vidgear.gears import VideoGear
+from vidgear.gears import WriteGear
 import numpy as np
 import cv2
 
@@ -8,6 +9,9 @@ stream_stab = VideoGear(source=0, stabilize=True).start()
 
 # open same stream without stabilization for comparison
 stream_org = VideoGear(source=0).start()
+
+# Define WriteGear Object with suitable output filename for e.g. `Output.mp4`
+writer = WriteGear(output = 'Save_video_duo_cam.mp4') 
 
 # loop over
 while True:
@@ -27,23 +31,16 @@ while True:
 
     # put text over concatenated frame
     cv2.putText(
-        output_frame,
-        "Before",
-        (10, output_frame.shape[0] - 10),
-        cv2.FONT_HERSHEY_SIMPLEX,
-        0.6,
-        (0, 255, 0),
-        2,
+        output_frame, "Before", (10, output_frame.shape[0] - 10),
+        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2,
     )
     cv2.putText(
-        output_frame,
-        "After",
-        (output_frame.shape[1] // 2 + 10, output_frame.shape[0] - 10),
-        cv2.FONT_HERSHEY_SIMPLEX,
-        0.6,
-        (0, 255, 0),
-        2,
+        output_frame, "After", (output_frame.shape[1] // 2 + 10, output_frame.shape[0] - 10),
+        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2,
     )
+
+    # Запись кадра в файл
+    writer.write(output_frame)
 
     # Show output window
     cv2.imshow("Stabilized Frame", output_frame)

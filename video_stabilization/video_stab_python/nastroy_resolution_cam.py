@@ -2,7 +2,6 @@
 from vidgear.gears import CamGear
 import cv2
 
-
 # define suitable tweak parameters for your stream.
 options = {
     "CAP_PROP_FRAME_WIDTH": 320, # resolution 320x240

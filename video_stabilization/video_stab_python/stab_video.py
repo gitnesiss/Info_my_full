@@ -7,35 +7,36 @@ from vidgear.gears import VideoGear
 from vidgear.gears import WriteGear
 import cv2
 
-stream = VideoGear(source=0, stabilize = True).start() # To open any valid video stream(for e.g device at 0 index)
+# Открыть любой допустимый видеопоток (например, для устройства с индексом 0)
+stream = VideoGear(source=0, stabilize = True).start()
 
-# infinite loop
+# Бесконечный цикл
 while True:
 
+    # читать стабилизированные кадры
     frame = stream.read()
-    # read stabilized frames
 
-    # check if frame is None
+    # проверка, отсутствует ли кадр
     if frame is None:
-        #if True break the infinite loop
+        # если True, прервать бесконечный цикл
         break
 
-    # do something with stabilized frame here
+    # Здесь можно что-нибудь сделать со стабилизированным кадром
 
+    # Показать окно вывода
     cv2.imshow("Stabilized Frame", frame)
-    # Show output window
 
     key = cv2.waitKey(1) & 0xFF
-    # check for 'q' key-press
+    # проверка нажатия клавиши «q»
     if key == ord("q"):
-        #if 'q' key-pressed break out
+        # если клавиша 'q' нажата, выйти из бесконечного цикла
         break
 
+# закрыть окно вывода
 cv2.destroyAllWindows()
-# close output window
 
+# безопасно закрыть видеопоток
 stream.stop()
-# safely close video stream
 
 
 

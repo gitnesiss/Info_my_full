@@ -4,6 +4,9 @@
 
 # Стабилизация видеопотока
 
+- [Стабилизация видеопотока](#стабилизация-видеопотока)
+- [Установка библиотеки для стабилизации видео](#установка-библиотеки-для-стабилизации-видео)
+
 [Ссылки на различные проекты по видеостабилизации](https://github.com/topics/video-stabilization)
 
 [Какие ресурсы посмотреть или изучить](https://abhitronix.github.io/vidgear/latest/help/general_faqs/)
@@ -23,6 +26,16 @@ WriteGear(output = 'output.mp4', custom_ffmpeg="/foo/foo1/FFmpeg")
 
 ```
 ./videostab input.avi
+```
+
+# Установка библиотеки для стабилизации видео
+
+```
+# Установка и обновление pip
+python -m pip install pip --upgrade
+
+# Установка OpenCV
+pip install opencv-python
 ```
 
 ---
