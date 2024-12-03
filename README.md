@@ -19,7 +19,11 @@
 
 2.5 [RaspberryPy](microelectronics/raspberrypi/electronika_raspberrypi.md)
 
-2.6 [Радиосвязь](microelectronics/radio_electronics/radiosvyaz.md)
+2.6 [Протоколы связи](microelectronics/protocols/README.md)
+
+2.7 [Радиосвязь](microelectronics/radio_electronics/radiosvyaz.md)
+
+2.8 [Видеосистемы](microelectronics/videosystems/README.md)
 
 3 [Программная стабилизация видеопотока](video_stabilization/README.md)
 

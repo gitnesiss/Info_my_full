@@ -16,7 +16,11 @@
 
 - [RaspberryPi](raspberrypi/electronika_raspberrypi.md)
 
+- [Протоколы связи](protocols/README.md)
+
 - [Радиосвязь](radio_electronics/radiosvyaz.md)
+
+- [Видеосистемы](videosystems/README.md)
 
 Это видео про [Android и ESP32 video](https://www.youtube.com/watch?v=QKGdPJR_tbU&list=PLmjT2NFTgg1c-CQiAdezZpi9RaFmN1n7I).
 

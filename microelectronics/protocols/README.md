@@ -10,10 +10,9 @@
 
 - 1 [Протокол MAVLink](mavlink/protocol_mavlink.md)
 
-- 2 [Протокол Pelco-D](pelco/protocol_pelco_d.md)
+- 2 [Протокол Pelco](pelco/protocol_pelco_d.md)
 
 - 3 [Протокол SBUS](sbus/protocol_sbus.md)
-
 
 ---
 
