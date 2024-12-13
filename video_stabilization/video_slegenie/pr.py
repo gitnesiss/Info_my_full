@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 from vidgear.gears import CamGear
 #video_url = 'https://youtu.be/Tf00zM6mPT4'
-video_url = 'https://www.youtube.com/watch?v=-RDeVPHipZU&ab_channel=MixedMatrixArts'
+video_url = 'https://rutube.ru/video/60b8c288fb0e7e0137a26cdb16b510f3/'
 #video_url = 'https://youtu.be/MDiY0SeyfGw'
 #video_url = 'https://youtu.be/gFRtAAmiFbE'
 
