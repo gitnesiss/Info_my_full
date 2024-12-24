@@ -7,9 +7,13 @@ from ultralytics import YOLO
 
 # Если доступна предварительно обученная модель, используйте ее.
 # model = YOLO("model.pt")
-model = YOLO("C:\\code\\tests\\ocv_env\\ocv_yolo_test\\yolo11n.pt")
+# model = YOLO("C:\\code\\tests\\ocv_env\\ocv_yolo_test\\yolo11n.pt")
+model = YOLO("yolo11n.pt")
 
 
+
+
+##### Этот кусочек кода можно отключать чтобы использовать модель с обучением #####
 
 # Отображение информации о модели
 model.info()
@@ -20,14 +24,18 @@ model.train(data="coco8.yaml", epochs=100)
 # Оцените эффективность модели на проверочном наборе
 results = model.val()
 
+##### Этот кусочек кода можно отключать чтобы использовать модель с обучением #####
+
+
 
 
 # Выполнить обнаружение объектов на изображении с использованием модели
-results = model("C:\\code\\tests\\ocv_env\\ocv_yolo_test\\madia_crasswalk_orig.jpg")
+# В VSC скопировать путь из дерева проекта до файла
+results = model("C:\code\Info_my_full\\video_stabilization\\video_slegenie\images\madia_crasswalk_orig.jpg")
 
-# Visualize the results
+# Показать результат
 for result in results:
     result.show()
 
-## Export the model to ONNX format
+## Экспортировать модель в формат ONNX
 # success = model.export(format="onnx")
