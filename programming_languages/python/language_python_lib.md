@@ -10,15 +10,18 @@
 
 - 0 [Названия библиотек и их назначение](#0-названия-библиотек-и-их-назначение)
 - 1 [Установка Python в Windows](#1-установка-python-в-windows)
-- 2 [Установка PyInstaller для создания исполняемого файла из скрипта *.py](#2-установка-pyinstaller-для-создания-исполняемого-файла-из-скрипта-py)
-- 3 [Установка библиотеки OpenCV](#3-установка-библиотеки-opencv)
-- 4 [Установка библиотеки для работы с Serial port'ом на Python](#4-установка-библиотеки-для-работы-с-serial-portом-на-python)
-- 5 [Установка библиотеки pymavlink для работы с протоколом MAVLink на Python](#5-установка-библиотеки-pymavlink-для-работы-с-протоколом-mavlink-на-python)
-- 6 [Установка PyQt6](#6-установка-pyqt6)
-  - 6.1 [Установка библиотеки pyqt-tools для установки дополнительных инструметов и плагинов для QT на Python](#61-установка-библиотеки-pyqt-tools-для-установки-дополнительных-инструметов-и-плагинов-для-qt-на-python)
-- 7 [Сборка QtCreator из исходников на Ubuntu](#7-сборка-qtcreator-из-исходников-на-ubuntu)
-- 8 [Сборка QtCreator из исходников на Windows](#8-сборка-qtcreator-из-исходников-на-windows)
-- 9 [Установка QT в Windows с помощью MSYS2](#9-установка-qt-в-windows-с-помощью-msys2)
+- 2 [Установка виртуального окружения Python](#2-установка-виртуального-окружения-python)
+- 3 [Установка ffmpeg](##3-установка-ffmpeg)
+- 4 [Установка PyInstaller для создания исполняемого файла из скрипта *.py](#4-установка-pyinstaller-для-создания-исполняемого-файла-из-скрипта-py)
+- 5 [Установка библиотеки OpenCV](#5-установка-библиотеки-opencv)
+- 6 [Установка библиотеки для работы с Serial port'ом на Python](#6-установка-библиотеки-для-работы-с-serial-portом-на-python)
+- 7 [Установка библиотеки pymavlink для работы с протоколом MAVLink на Python](#7-установка-библиотеки-pymavlink-для-работы-с-протоколом-mavlink-на-python)
+- 8 [Установка PyQt6](#8-установка-pyqt6)
+  - 8.1 [Установка библиотеки pyqt-tools для установки дополнительных инструметов и плагинов для QT на Python](#81-установка-библиотеки-pyqt-tools-для-установки-дополнительных-инструметов-и-плагинов-для-qt-на-python)
+- 9 [Сборка QtCreator из исходников на Ubuntu](#9-сборка-qtcreator-из-исходников-на-ubuntu)
+- 10 [Сборка QtCreator из исходников на Windows](#10-сборка-qtcreator-из-исходников-на-windows)
+- 11 [Установка QT в Windows с помощью MSYS2](#11-установка-qt-в-windows-с-помощью-msys2)
+
 
 
 ## 0 Названия библиотек и их назначение
@@ -77,7 +80,63 @@ python -m pip install pip --upgrade
 pip install -U pip
 ```
 
-## 2 Установка PyInstaller для создания исполняемого файла из скрипта *.py
+
+## 2 Установка виртуального окружения Python
+
+Бывает проще работать в изолированной системе чтобы не устанавливать все пакеты в основную систему. Для это удобно использовать виртуальное окружение
+
+Для того чтобы создать виртуальное окружение
+
+```
+# Для Windows
+python -m venv cv_env
+
+# Для UNIX и RaspberryPi
+python3 -m venv cv_env
+```
+
+Активация виртуального окружения
+
+```
+# Для Windows
+cv_env/scripts/activate
+
+# Для UNIX и RaspberryPi
+source cv_env/bin/activate
+```
+
+После активации окружения в терминале должна появиться надпись перед строкой ввода команды в данном случае
+```
+(cv_env) PS C:\code\label_proj> 
+```
+
+Для выхода из виртуального окружения и возврата к глобальному окружению Python введите следующую команду:
+```
+deactivate
+```
+
+Создать список в файле requirements.txt  можно с помощью команды `pip freeze` и команды перенаправления `>`
+```
+pip freeze > requirements.txt
+```
+
+Внутри окружения можно установить пакеты по списку
+```
+pip install -r requirements.txt
+```
+
+
+## 3 Установка ffmpeg
+
+### Установка в Windows
+
+[Ссылка где посмотреть как провести установку ffmpeg](https://ru.wikihow.com/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83-FFmpeg-%D0%B2-Windows)
+
+### Установка в UNIX
+
+
+
+## 4 Установка PyInstaller для создания исполняемого файла из скрипта *.py
 
 Почитать подробнее можно [тут](https://habr.com/ru/companies/slurm/articles/746622/).
 
@@ -98,7 +157,8 @@ pyinstaller --onefile hello.py
 pyinstaller --noconsole --onefile hello.py
 ```
 
-## 3 Установка библиотеки OpenCV
+
+## 5 Установка библиотеки OpenCV
 ```
 # Установка OpenCV
 pip install opencv-python
@@ -110,7 +170,8 @@ python.exe -m pip install --upgrade pip
 pip install opencv-contrib-python
 ```
 
-## 4 Установка библиотеки для работы с Serial port'ом на Python
+
+## 6 Установка библиотеки для работы с Serial port'ом на Python
 
 Про установку библиотеки можно прочитать [тут](https://musbench.com/all/com-port-python-arduino/).
 
@@ -125,7 +186,9 @@ export PATH=$PATH:/home/$USER/.local/bin
 
 При установке в UNIX системах, нужно добавить каталог содержащий эту библиотеку в переменную $PATH. Почитать [тут](https://ip-calculator.ru/blog/ask/kak-dobavit-katalog-v-path-v-linux/).
 
-## 5 Установка библиотеки pymavlink для работы с протоколом MAVLink на Python
+
+
+## 7 Установка библиотеки pymavlink для работы с протоколом MAVLink на Python
 
 ```
 # Для Windows
@@ -137,7 +200,8 @@ git clone https://github.com/mavlink/mavlink.git --recursive
 python3 -m pip install -r mavlink/pymavlink/requirements.txt
 ```
 
-## 6 Установка PyQt6
+
+## 8 Установка PyQt6
 
 Для установки PyQt6 следует запустить следующую команду
 
@@ -166,7 +230,7 @@ python3  # Запускаем интерпретатор Python
 
 Если никаких ошибок не возникло, то установка прошла удачно. Если возникла ошибка, то нужно причины ошибки.
 
-### 6.1 Установка библиотеки pyqt-tools для установки дополнительных инструметов и плагинов для QT на Python
+### 8.1 Установка библиотеки pyqt-tools для установки дополнительных инструметов и плагинов для QT на Python
 
 ```
 pip install pyqt6-tools
@@ -174,7 +238,8 @@ pip install pyqt6-tools
 pyqt6-tools designer
 ```
 
-# 7 Сборка QtCreator из исходников на Ubuntu
+
+# 9 Сборка QtCreator из исходников на Ubuntu
 
 ```
 sudo apt-get update -y
@@ -228,21 +293,22 @@ cmake --build . --parallel 4
 cmake --install.
 ```
 
-# 8 Сборка QtCreator из исходников на Windows
 
-## 8.1 Установка CMake
+# 10 Сборка QtCreator из исходников на Windows
+
+## 10.1 Установка CMake
 
 ```
 pacman -S cmake
 ```
 
-## 8.2 Установка python3
+## 10.2 Установка python3
 
 ```
 pacman -S python3
 ```
 
-## 8.3 Сборка QtCreator из исходников
+## 10.3 Сборка QtCreator из исходников
 
 ```
 $ sudo apt install cmake
@@ -258,7 +324,8 @@ $ make
 $ sudo make install INSTALL_ROOT=[директория, в которую хотите установить. Например, /opt/QtCreator]
 ```
 
-# 9 Установка QT в Windows с помощью MSYS2
+
+## 11 Установка QT в Windows с помощью MSYS2
 
 Для установки QT Creator на Windows нужно выполнить следующие шаги:
 
