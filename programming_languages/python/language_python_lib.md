@@ -14,13 +14,14 @@
 - 3 [Установка ffmpeg](##3-установка-ffmpeg)
 - 4 [Установка PyInstaller для создания исполняемого файла из скрипта *.py](#4-установка-pyinstaller-для-создания-исполняемого-файла-из-скрипта-py)
 - 5 [Установка библиотеки OpenCV](#5-установка-библиотеки-opencv)
-- 6 [Установка библиотеки для работы с Serial port'ом на Python](#6-установка-библиотеки-для-работы-с-serial-portом-на-python)
-- 7 [Установка библиотеки pymavlink для работы с протоколом MAVLink на Python](#7-установка-библиотеки-pymavlink-для-работы-с-протоколом-mavlink-на-python)
-- 8 [Установка PyQt6](#8-установка-pyqt6)
-  - 8.1 [Установка библиотеки pyqt-tools для установки дополнительных инструметов и плагинов для QT на Python](#81-установка-библиотеки-pyqt-tools-для-установки-дополнительных-инструметов-и-плагинов-для-qt-на-python)
-- 9 [Сборка QtCreator из исходников на Ubuntu](#9-сборка-qtcreator-из-исходников-на-ubuntu)
-- 10 [Сборка QtCreator из исходников на Windows](#10-сборка-qtcreator-из-исходников-на-windows)
-- 11 [Установка QT в Windows с помощью MSYS2](#11-установка-qt-в-windows-с-помощью-msys2)
+- 6 [Установка библиотеки CVZone]()
+- 7 [Установка библиотеки для работы с Serial port'ом на Python](#6-установка-библиотеки-для-работы-с-serial-portом-на-python)
+- 8 [Установка библиотеки pymavlink для работы с протоколом MAVLink на Python](#7-установка-библиотеки-pymavlink-для-работы-с-протоколом-mavlink-на-python)
+- 9 [Установка PyQt6](#8-установка-pyqt6)
+  - 9.1 [Установка библиотеки pyqt-tools для установки дополнительных инструметов и плагинов для QT на Python](#81-установка-библиотеки-pyqt-tools-для-установки-дополнительных-инструметов-и-плагинов-для-qt-на-python)
+- 10 [Сборка QtCreator из исходников на Ubuntu](#9-сборка-qtcreator-из-исходников-на-ubuntu)
+- 11 [Сборка QtCreator из исходников на Windows](#10-сборка-qtcreator-из-исходников-на-windows)
+- 12 [Установка QT в Windows с помощью MSYS2](#11-установка-qt-в-windows-с-помощью-msys2)
 
 
 
@@ -169,6 +170,18 @@ python.exe -m pip install --upgrade pip
 # Дополнения для библиотеки OpenCV дополниетльные команды, которые позволят работать в полную силу.
 pip install opencv-contrib-python
 ```
+
+
+## 6 Установка библиотеки CVZone
+
+Это пакет компьютерного зрения, который упрощает выполнение функций обработки изображений и ИИ. В основе лежат библиотеки OpenCV и Mediapipe.
+
+Ссылка на проект [здесь](https://github.com/cvzone/cvzone)
+
+```
+pip install cvzone
+```
+
 
 
 ## 6 Установка библиотеки для работы с Serial port'ом на Python
@@ -330,18 +343,24 @@ $ sudo make install INSTALL_ROOT=[директория, в которую хот
 Для установки QT Creator на Windows нужно выполнить следующие шаги:
 
 1. Перейти на сайт [msys2](https://www.msys2.org/).
+
 2. Скачать установочный файл `msys2-x86_64-20240507.exe`.
+
 3. Установить файл `msys2-x86_64-20240507.exe`.
+
 4. По завершению установки запустить файл `ucrt64.exe` находящийся по адресу `C:\msys64\` если был выбран путь установки по умолчанию.
+
 5. В запущенном терминале вводим команду для установки инструментов компиляции:
 ```
 pacman -S mingw-w64-ucrt-x86_64-gcc
 ```
 При установке появится вопрос для продолжения установки - нажимаем "Enter".
+
 6. Проверим установлен ли компилятор с помощью команды:
 ```
 gcc --version
 ```
+
 7. Обновляем все пакеты MSYS2:
 ```
 pacman -Suy
@@ -352,12 +371,7 @@ pacman -Suy
 
 8. Устаналвиваем QT Creator:
 ```
-pacman -S base base-devel mingw-w64-x86_64-qt6 mingw-w64-x86_64-qt6-base mingw-w64-x86_64-toolchain mingw-w64-x86_64-qt-creator mingw-w64-x86_64-qt6-static mingw-w64-x86_64-cmake mingw-w64-x86_64-clang mingw-w64-x86_64-cc mingw-w64-x86_64-clang mingw-w64-x86_64-qt5-static  mingw-w64-x86_64-vulkan-headers mingw-w64-x86_64-python mingw-w64-x86_64-clang-tools-extra
-```
-
-
-```
-pacman -S base base-devel mingw-w64-x86_64-qt6 mingw-w64-x86_64-qt6-base mingw-w64-x86_64-toolchain mingw-w64-x86_64-qt-creator mingw-w64-x86_64-qt6-static mingw-w64-x86_64-cmake mingw-w64-x86_64-clang mingw-w64-x86_64-cc mingw-w64-x86_64-clang mingw-w64-x86_64-qt5-static  mingw-w64-x86_64-vulkan-headers mingw-w64-x86_64-python mingw-w64-x86_64-clang-tools-extra
+pacman -S base base-devel mingw-w64-x86_64-qt6 mingw-w64-x86_64-qt6-base mingw-w64-x86_64-toolchain mingw-w64-x86_64-qt-creator mingw-w64-x86_64-qt6-static mingw-w64-x86_64-cmake mingw-w64-x86_64-clang mingw-w64-x86_64-cc mingw-w64-x86_64-clang mingw-w64-x86_64-qt5-static mingw-w64-x86_64-vulkan-headers mingw-w64-x86_64-python mingw-w64-x86_64-clang-tools-extra
 ```
 
 

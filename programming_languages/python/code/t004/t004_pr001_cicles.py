@@ -5,11 +5,11 @@ for friend in friends:
 
 # Функция range() для построения числовых последовательностей
 for value in range(1,5):
-    print(value)
+    print(value)  # 1, 2, 3, 4
 
 # Функция range() по умолчанию начинает отсчёт с числа 0
 for value in range(5):
-    print(value)
+    print(value)  # 0, 1, 2, 3, 4
 
 # Преобразуем в числовой список range() благодаря функции list()
 numbers = list(range(6))  # [0, 1, 2, 3, 4, 5]

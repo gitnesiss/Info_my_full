@@ -26,4 +26,4 @@ print(cars)
 
 # Определение длины списка
 cars = ['bmw', 'audi', 'toyota', 'subaru']
-print(f"Длина списка cars {len(cars)}.")
+print(f"\nДлина списка cars {len(cars)}.")
