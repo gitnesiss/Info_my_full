@@ -7,9 +7,19 @@ from vidgear.gears import VideoGear
 from vidgear.gears import WriteGear
 import cv2
 
-# Открыть любой допустимый видеопоток (например, для устройства с индексом 0)
-stream = VideoGear(source=0, stabilize = True).start()
 
+cap = cv2.VideoCapture(0)
+if cap.isOpened():
+    cap.release()
+    print("CAMERA AVAILABLE")
+
+# Открыть любой допустимый видеопоток (например, для устройства с индексом 0)
+
+# stream = VideoGear(source=0).start()
+# stream = VideoGear().start()
+stream = VideoGear(source=0, stabilize=False, backend=cv2.CAP_DSHOW).start()
+
+    
 # Бесконечный цикл
 while True:
 

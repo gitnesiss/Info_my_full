@@ -8,9 +8,9 @@ import datetime
 import os
 
 # open any valid video stream with stabilization enabled(`stabilize = True`)
-stream_stab = VideoGear(source=0, stabilize=True).start()
+stream_stab = VideoGear(source=0, stabilize=True, backend=cv2.CAP_DSHOW).start()
 
-stream_not_stab = VideoGear(source=0).start()
+stream_not_stab = VideoGear(source=0, backend=cv2.CAP_DSHOW).start()
 
 help = False
 help_on = "help:  ON"

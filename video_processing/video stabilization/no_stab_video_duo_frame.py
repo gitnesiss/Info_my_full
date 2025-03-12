@@ -5,10 +5,10 @@ import numpy as np
 import cv2
 
 # open any valid video stream with stabilization enabled(`stabilize = True`)
-stream_stab = VideoGear(source=0, stabilize=True).start()
+stream_stab = VideoGear(source=0, stabilize=True, backend=cv2.CAP_DSHOW).start()
 
 # open same stream without stabilization for comparison
-stream_org = VideoGear(source=0).start()
+stream_org = VideoGear(source=0, backend=cv2.CAP_DSHOW).start()
 
 # Define WriteGear Object with suitable output filename for e.g. `Output.mp4`
 writer = WriteGear(output = 'Save_video_duo_cam.mp4') 
