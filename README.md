@@ -8,22 +8,22 @@
 1 [Языки программирования и языки сценариев командной оболочки](programming_languages/README.md)
 
 2 [Микроэлектроника и одноплатные компьютеры](microelectronics/README.md)
+  
+    2.1 [Компоненты микроэлектроники](microelectronics/micro_components/micro_components.md)
 
-2.1 [Компоненты микроэлектроники](microelectronics/micro_components/micro_components.md)
+    2.2 [Ардуино](microelectronics/arduino/electronika_arduino.md)
 
-2.2 [Ардуино](microelectronics/arduino/electronika_arduino.md)
+    2.3 [ESP-32](microelectronics/ESP32/electronika_esp32.md)
 
-2.3 [ESP-32](microelectronics/ESP32/electronika_esp32.md)
+    2.4 [OrangePI](microelectronics/orangepi/electronika_orangepi.md)
 
-2.4 [OrangePI](microelectronics/orangepi/electronika_orangepi.md)
+    2.5 [RaspberryPy](microelectronics/raspberrypi/electronika_raspberrypi.md)
 
-2.5 [RaspberryPy](microelectronics/raspberrypi/electronika_raspberrypi.md)
+    2.6 [Протоколы связи](microelectronics/protocols/README.md)
 
-2.6 [Протоколы связи](microelectronics/protocols/README.md)
+    2.7 [Радиосвязь](microelectronics/radio_electronics/radiosvyaz.md)
 
-2.7 [Радиосвязь](microelectronics/radio_electronics/radiosvyaz.md)
-
-2.8 [Видеосистемы](microelectronics/videosystems/README.md)
+    2.8 [Видеосистемы](microelectronics/videosystems/README.md)
 
 3 [Программная стабилизация видеопотока](video_stabilization/README.md)
 
