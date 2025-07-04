@@ -4,11 +4,12 @@
 
 Содержание:
 
-1. [Qt Quick Controls](src/Qt_Quick_Controls.md)
-2. [Positioners and Layouts](src/Qt_Quick_Positioners_and_Layouts.md)
-3. []()
+1. [Проекты на QML](project/README.md)
+2. [Qt Quick Controls](src/Qt_Quick_Controls.md)
+3. [Positioners and Layouts](src/Qt_Quick_Positioners_and_Layouts.md)
 4. []()
-5. [Элементы перетекания и анимация (Qt_Quick_Fluid_Elements_and_Animation)](src/Qt_Quick_Fluid_Elements_and_Animation.md).
-6. [Как представить C++ в QML?(С++ и QML)](src/Qt_Quick_Expose_C++_to_QML.md).
-7. [Основы интеграции QML (С++ и QML)](src/Qt_Quick_QML_Integration_Basics.md)
+5. []()
+6. [Элементы перетекания и анимация (Qt_Quick_Fluid_Elements_and_Animation)](src/Qt_Quick_Fluid_Elements_and_Animation.md).
+7. [Как представить C++ в QML?(С++ и QML)](src/Qt_Quick_Expose_C++_to_QML.md).
+8. [Основы интеграции QML (С++ и QML)](src/Qt_Quick_QML_Integration_Basics.md)
 

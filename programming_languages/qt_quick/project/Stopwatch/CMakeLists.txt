@@ -14,7 +14,8 @@ set(CMAKE_AUTOUIC ON)  # Авто-генерация ui файлов
 # Ищет Qt 6 и обязательные компоненты: Quick (QML), Gui (графика), Qml (движок QML)
 find_package(Qt6 6.5 REQUIRED COMPONENTS Quick Gui Qml)
 
-qt_standard_project_setup(REQUIRES 6.5)
+# Не обязательная настройка которая дублирует одну из верхних настроек
+# qt_standard_project_setup(REQUIRES 6.5)
 
 # # Создаем исполняемый файл с именем проекта (Stopwatch) и добавляем исходные файлы. Перечисление всех исходных файлов (включая заголовки при ручной регистрации типа)
 qt_add_executable(appStopwatch

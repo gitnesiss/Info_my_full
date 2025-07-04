@@ -44,7 +44,7 @@ private:
     void updateTime();
 
     // Рассчитывает точное текущее время (включая активный интервал)
-    std::chrono::milliseconds m_currentElapsed() const;
+    std::chrono::milliseconds getCurrentElapsed() const;
 
     bool m_running = false;  // Состояние: запущен или остановлен
 

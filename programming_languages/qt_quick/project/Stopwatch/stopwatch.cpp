@@ -12,16 +12,12 @@ Stopwatch::Stopwatch(QObject *parent) : QObject(parent)
     // Запускаем таймер
     timer->start(17);  // ≈60 FPS
 
-    // qDebug() << "Автоматический запуск секундомера.";
     qInfo() << "Application started";
     qDebug() << "QML engine initialized";
-
-    // Автоматический старт при открытии программы
-    startStop();
 }
 
 // Рассчитывает точное текущее время (включая активный интервал)
-std::chrono::milliseconds Stopwatch::m_currentElapsed() const
+std::chrono::milliseconds Stopwatch::getCurrentElapsed() const
 {
     if (m_running) {
         // Время = накопленное + (текущее - время старта)
@@ -33,11 +29,11 @@ std::chrono::milliseconds Stopwatch::m_currentElapsed() const
     return m_elapsed;
 }
 
-// Возвращает актуальное время в любой момент, форматируя время в строку формата HH:MM:SS:zzz. time() возвращает актуальное значение через m_currentElapsed()
+// Возвращает актуальное время в любой момент, форматируя время в строку формата HH:MM:SS:zzz. time() возвращает актуальное значение через getCurrentElapsed()
 QString Stopwatch::time() const
 {
     // Определяем общее время в миллисекундах
-    auto totalMs = m_currentElapsed().count();
+    auto totalMs = getCurrentElapsed().count();
 
     int hours = totalMs / 3600000;
     int minutes = (totalMs % 3600000) / 60000;
@@ -62,7 +58,7 @@ void Stopwatch::startStop()
 {
     if (m_running) {
         // Если секундомер работал, то останавливаем: сохраняем текущее накопленное время
-        m_elapsed = m_currentElapsed();
+        m_elapsed = getCurrentElapsed();
     } else {
         // Если был остановлен, то запускаем: запоминаем текущее время как время старта
         m_startTime = std::chrono::steady_clock::now();
