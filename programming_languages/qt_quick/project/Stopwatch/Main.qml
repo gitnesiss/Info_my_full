@@ -9,6 +9,8 @@ import Stopwatch 1.0  // Импортируем наш C++ модуль. Поз�
 Window {
     width: 640      // Ширина окна
     height: 480     // Высота окна
+    minimumWidth: 400
+    minimumHeight: 300
     visible: true   // Делаем окно видимым
     // title: "Секундомер"
     title: qsTr("Секундомер")   // Заголовок окна
@@ -79,6 +81,32 @@ Window {
             anchors {
                 horizontalCenter: parent.horizontalCenter
             }
+
+            // Анимация нажатия
+            Behavior on scale {
+                NumberAnimation { duration: 100 }
+            }
+        }
+    }
+
+    // Статусная строка
+    Text {
+        id: statusText
+        anchors {
+            bottom: parent.bottom
+            horizontalCenter: parent.horizontalCenter
+            margins: 10
+        }
+        text: stopwatch.running ? qsTr("Секундомер работает") : qsTr("Секундомер остановлен")
+        font.italic: true
+        color: "#666"
+    }
+
+    // Обработчик изменения состояния
+    Connections {
+        target: stopwatch
+        function onRunningChanged() {
+            console.log("Состояние изменено:", stopwatch.running ? "работает" : "остановлен")
         }
     }
 }
